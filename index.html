@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VELOZ Bicicletaria, oficina e loja em São Paulo</title>
-<meta name="description" content="Revisão, bike fit, e-bikes e socorro 24h. A bicicletaria que trata sua bike como máquina de corrida.">
+<title>Ciclo Ype, bicicletas, peças e acessórios em São Paulo</title>
+<meta name="description" content="Bicicletas, peças e acessórios para bike e moto, nacionais e importados. Rua dos Igarapés, 1001, Itaim Paulista.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0d0a;--sm:#131610;--ink:#f2f4ec;--mut:#a9b09e;--vt:#d7ff3e;--ln:rgba(242,244,236,.14);--rd:22px}
+:root{--bg:#0b0d0a;--sm:#131610;--ink:#f2f4ec;--mut:#a9b09e;--vt:#ffea00;--ln:rgba(242,244,236,.14);--rd:22px}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif;margin:0;overflow-x:hidden}
 ::selection{background:var(--vt);color:#0b0d0a}
@@ -30,6 +30,7 @@ a{color:inherit}
 .hd{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4vw;transition:background .35s,border-color .35s;border-bottom:1px solid transparent}
 .hd.f{background:rgba(11,13,10,.82);backdrop-filter:blur(14px);border-color:var(--ln)}
 .hd-l{font-family:"Archivo Black",sans-serif;font-size:1.25rem;letter-spacing:.02em;text-decoration:none}
+.hd-l img{height:44px;display:block}
 .hd-l i{font-style:normal;color:var(--vt)}
 .hd-n{display:flex;gap:2rem}
 .hd-n a{text-decoration:none;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
@@ -43,7 +44,7 @@ a{color:inherit}
 @keyframes zm{to{transform:scale(1)}}
 .hro-v{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,13,10,.55) 0%,rgba(11,13,10,.15) 40%,rgba(11,13,10,.92) 100%)}
 .hro-x{position:relative;padding:0 4vw 4vh}
-.hro-s{display:inline-block;font-size:.78rem;letter-spacing:.4em;text-transform:uppercase;color:var(--vt);border:1px solid rgba(215,255,62,.5);border-radius:999px;padding:.55rem 1.2rem;margin-bottom:1.4rem}
+.hro-s{display:inline-block;font-size:.78rem;letter-spacing:.4em;text-transform:uppercase;color:var(--vt);border:1px solid rgba(255,234,0,.55);border-radius:999px;padding:.55rem 1.2rem;margin-bottom:1.4rem}
 .hro-t{font-size:clamp(3rem,11.5vw,10.5rem);margin:0}
 .hro-t .s{color:var(--vt)}
 .hro-p{max-width:34rem;color:#e6e9dc;font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.6}
@@ -75,7 +76,7 @@ a{color:inherit}
 /* servicos */
 .sv-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .cd{background:var(--sm);border:1px solid var(--ln);border-radius:var(--rd);padding:2rem;position:relative;overflow:hidden;transition:transform .35s,border-color .35s}
-.cd:hover{transform:translateY(-6px);border-color:rgba(215,255,62,.55)}
+.cd:hover{transform:translateY(-6px);border-color:rgba(255,234,0,.6)}
 .cd n{font-family:"Archivo Black",sans-serif;color:var(--vt);font-size:.85rem;letter-spacing:.2em}
 .cd h3{font-size:1.5rem;margin:.9rem 0 .6rem;text-transform:uppercase;font-family:"Archivo Black",sans-serif;font-weight:400}
 .cd p{color:var(--mut);line-height:1.65;margin:0 0 1.4rem}
@@ -167,18 +168,18 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<div class="pl" id="pl"><span>Bicicletaria Veloz</span><b><i id="pln">0</i>%</b></div>
+<div class="pl" id="pl"><span>Ciclo Ype</span><b><i id="pln">0</i>%</b></div>
 <div class="cur" id="cur"></div>
 
 <header class="hd" id="hd">
-<a class="hd-l" href="#topo">VELOZ<i>.</i></a>
+<a class="hd-l" href="#topo"><img src="assets/logo.png" alt="Ciclo Ype"></a>
 <nav class="hd-n" id="hdn">
 <a href="#servicos">Serviços</a>
 <a href="#bikes">Bikes</a>
 <a href="#oficina">Oficina</a>
 <a href="#agendar">Agendar</a>
 </nav>
-<a class="hd-c" href="#agendar">Revisão hoje</a>
+<a class="hd-c" href="https://wa.me/5511973566669?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener">Chamar no zap</a>
 <button class="hd-m" id="hdm" aria-label="Abrir menu">☰</button>
 </header>
 
@@ -186,39 +187,39 @@ html{scroll-behavior:auto}
 <img class="hro-i" src="https://unsplash.com/photos/ZlJ6qFInqQE/download?w=2000&q=80&fm=jpg" alt="Ciclista no topo da montanha ao pôr do sol" fetchpriority="high">
 <div class="hro-v"></div>
 <div class="hro-x">
-<span class="hro-s">Oficina e loja, São Paulo</span>
-<h1 class="hro-t d">Pedale<br>mais <span class="s">longe.</span></h1>
-<p class="hro-p">Revisão com torque calibrado, bike fit 3D e socorro 24h. Sua bike entra cansada e sai máquina de corrida.</p>
+<span class="hro-s">Itaim Paulista, São Paulo</span>
+<h1 class="hro-t d">Bike e moto<br><span class="s">num só lugar.</span></h1>
+<p class="hro-p">Bicicletas, peças e acessórios para bike e moto, nacionais e importados. Revisão, montagem e atendimento de balcão.</p>
 <div class="hro-a">
 <a class="bt bt1" href="#agendar">Agendar revisão</a>
 <a class="bt bt2" href="#bikes">Ver bikes</a>
 </div>
 <div class="hro-f">
-<div><b>12 anos</b><span>de oficina</span></div>
-<div><b>8,4 mil</b><span>revisões feitas</span></div>
-<div><b>4,9 ★</b><span>2,1 mil avaliações</span></div>
-<div><b>24 h</b><span>socorro móvel</span></div>
+<div><b>Bike</b><span>e moto</span></div>
+<div><b>Nacional</b><span>e importado</span></div>
+<div><b>WhatsApp</b><span>direto no balcão</span></div>
+<div><b>Itaim</b><span>Paulista, SP</span></div>
 </div>
 </div>
 </section>
 
 <div class="mq" aria-hidden="true"><div class="mq-t" id="mqt">
-<span>Revisão geral ★</span><span>Bike fit 3D ★</span><span>E-bikes ★</span><span>Socorro 24h ★</span><span>Peças originais ★</span><span>Montagem ★</span>
+<span>Peças bike ★</span><span>Peças moto ★</span><span>Acessórios ★</span><span>Revisão ★</span><span>Montagem ★</span><span>Nacionais e importados ★</span>
 </div></div>
 
 <section class="mn rv">
-<p>A Veloz nasceu numa garagem em 2014. Hoje é a oficina que os <span class="s">ciclistas indicam</span> quando a pergunta é séria: <k>quem mexe na minha bike sem gambiarra?</k> Torque certo, peça original, prazo cumprido.</p>
+<p>A Ciclo Ype é a loja do Itaim que resolve <span class="s">bike e moto no mesmo balcão.</span> Peça nacional e importada, <k>preço justo e gente que entende do assunto.</k> Entrou com problema, saiu rodando.</p>
 </section>
 
 <section class="sc" id="servicos">
 <div class="sc-h rv"><h2 class="d">Serviços</h2><span>01, o que fazemos</span></div>
 <div class="sv-g">
-<article class="cd rv"><n>01</n><h3>Revisão geral</h3><p>Desmontagem completa, limpeza ultrassônica da transmissão, lubrificação cerâmica e regulagem fina de câmbios e freios.</p><f><b>R$ 249</b><a href="#agendar">Agendar →</a></f></article>
-<article class="cd rv"><n>02</n><h3>Bike fit 3D</h3><p>Captura de movimento e ajuste milimétrico de selim, mesa e tacos. Adeus, dor no joelho e formigamento nas mãos.</p><f><b>R$ 399</b><a href="#agendar">Agendar →</a></f></article>
-<article class="cd rv"><n>03</n><h3>E-bikes</h3><p>Diagnóstico de bateria e motor, atualização de firmware e revisão do sistema elétrico com laudo técnico.</p><f><b>R$ 299</b><a href="#agendar">Agendar →</a></f></article>
-<article class="cd rv"><n>04</n><h3>Socorro 24h</h3><p>Furou, quebrou ou travou no meio do pedal? Van oficina vai até você na capital e devolve a bike rodando.</p><f><b>R$ 149</b><a href="#agendar">Chamar →</a></f></article>
-<article class="cd rv"><n>05</n><h3>Rodas e raiação</h3><p>Centralização em desempenadeira profissional, troca de raios e conversão tubeless com selante premium.</p><f><b>R$ 189</b><a href="#agendar">Agendar →</a></f></article>
-<article class="cd rv"><n>06</n><h3>Montagem zero</h3><p>Sua bike nova montada do zero com torque de fábrica, checklist de 40 itens e primeira regulagem grátis.</p><f><b>R$ 349</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>01</n><h3>Revisão geral</h3><p>Desmontagem, limpeza, lubrificação e regulagem fina de câmbios e freios. Bike ou moto saindo redonda.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>02</n><h3>Peças para bike</h3><p>Transmissão, freios, cabos, pneus, câmaras e rolamentos das principais marcas do mercado.</p><f><b>Consulte</b><a href="#agendar">Pedir →</a></f></article>
+<article class="cd rv"><n>03</n><h3>Peças para moto</h3><p>Relação, cabos, pastilhas, lâmpadas, filtros e acessórios para o dia a dia e para a estrada.</p><f><b>Consulte</b><a href="#agendar">Pedir →</a></f></article>
+<article class="cd rv"><n>04</n><h3>Acessórios</h3><p>Capacetes, cadeados, suportes, bags, iluminação e tudo para equipar bike e piloto.</p><f><b>Consulte</b><a href="#agendar">Pedir →</a></f></article>
+<article class="cd rv"><n>05</n><h3>Montagem</h3><p>Bike nova montada do zero com aperto certo, checklist completo e primeira regulagem incluída.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
+<article class="cd rv"><n>06</n><h3>Regulagem fina</h3><p>Câmbio preciso, freio mordendo e roda centralizada. Aquele trato que muda o pedal.</p><f><b>Consulte</b><a href="#agendar">Agendar →</a></f></article>
 </div>
 </section>
 
@@ -229,28 +230,28 @@ html{scroll-behavior:auto}
 <img src="https://unsplash.com/photos/kCKb5HIiLCs/download?w=1200&q=80&fm=jpg" alt="Bicicleta speed estacionada na loja" loading="lazy">
 <div><e>Speed, carbono</e><h3>Aero R9 Disc</h3>
 <ul><li>Quadro carbono 9,1 kg</li><li>Grupo eletrônico 12v</li><li>Rodas 50 mm tubeless</li></ul>
-<f><b>R$ 14.990</b><a class="bt bt1" style="padding:.8rem 1.4rem" href="#agendar">Quero essa</a></f></div>
+<f><b>Consulte</b><a class="bt bt1" style="padding:.8rem 1.4rem" href="#agendar">Quero essa</a></f></div>
 </article>
 <article class="bk-c rv">
 <img src="https://unsplash.com/photos/GNSIOmiBFaY/download?w=1200&q=80&fm=jpg" alt="Mecânico segurando roda de bicicleta" loading="lazy">
 <div><e>Gravel, alumínio</e><h3>Terra X5</h3>
 <ul><li>Quadro alloy com carbono no garfo</li><li>Transmissão 1x12</li><li>Pneu 45 mm misto</li></ul>
-<f><b>R$ 7.490</b><a class="bt bt1" style="padding:.8rem 1.4rem" href="#agendar">Quero essa</a></f></div>
+<f><b>Consulte</b><a class="bt bt1" style="padding:.8rem 1.4rem" href="#agendar">Quero essa</a></f></div>
 </article>
 <article class="bk-c rv">
 <img src="https://unsplash.com/photos/XvBfMNVZtXY/download?w=1200&q=80&fm=jpg" alt="Detalhe do guidão de bicicleta com fundo desfocado" loading="lazy">
 <div><e>Urbana, elétrica</e><h3>Cidade E500</h3>
 <ul><li>Motor central 250 W</li><li>Autonomia de 120 km</li><li>Freios hidráulicos</li></ul>
-<f><b>R$ 9.990</b><a class="bt bt1" style="padding:.8rem 1.4rem" href="#agendar">Quero essa</a></f></div>
+<f><b>Consulte</b><a class="bt bt1" style="padding:.8rem 1.4rem" href="#agendar">Quero essa</a></f></div>
 </article>
 </div>
 </section>
 
 <section class="nm rv">
-<div><b><i data-c="12">0</i> anos</b><span>de estrada</span></div>
-<div><b><i data-c="8400">0</i>+</b><span>revisões entregues</span></div>
-<div><b><i data-c="98">0</i>%</b><span>no prazo prometido</span></div>
-<div><b><i data-c="40">0</i> itens</b><span>no checklist final</span></div>
+<div><b>Bike</b><span>e moto</span></div>
+<div><b>100%</b><span>peça original</span></div>
+<div><b>WhatsApp</b><span>direto no balcão</span></div>
+<div><b>Itaim</b><span>Paulista, SP</span></div>
 </section>
 
 <section class="sc" id="oficina">
@@ -259,25 +260,23 @@ html{scroll-behavior:auto}
 <div class="of rv">
 <img src="https://unsplash.com/photos/WIsOienEXBM/download?w=1400&q=80&fm=jpg" alt="Mecânico trabalhando em bicicleta na oficina" loading="lazy">
 <div class="of-t">
-<h2 class="d">Ferramenta certa, medida certa.</h2>
-<p>Nada de olho. Cada aperto segue o torque do fabricante, cada diagnóstico sai com foto e laudo no seu WhatsApp antes de qualquer troca.</p>
+<h2 class="d">Ferramenta certa, peça certa.</h2>
+<p>Revisão, montagem e troca de peças para bike e moto, com orçamento fechado antes e sem palavrão técnico depois.</p>
 <ul>
-<li>Torquímetros calibrados e prensa de caixa de direção</li>
-<li>Peças originais Shimano, SRAM e Campagnolo</li>
+<li>Peças nacionais e importadas das principais marcas</li>
+<li>Revisão geral e regulagem fina</li>
 <li>Orçamento fechado antes, sem surpresa depois</li>
-<li>Bike reserva grátis em revisões acima de 2 dias</li>
+<li>Capacetes, cadeados e acessórios no balcão</li>
 </ul>
-<a class="bt bt1" href="#agendar">Conhecer a oficina</a>
+<a class="bt bt1" href="https://wa.me/5511973566669?text=Ol%C3%A1!%20Preciso%20de%20uma%20revis%C3%A3o." target="_blank" rel="noopener">Pedir revisão no zap</a>
 </div>
 </div>
 
 <section class="sc">
-<div class="sc-h rv"><h2 class="d">Quem pedala <span class="s">confia</span></h2><span>04, depoimentos</span></div>
+<div class="sc-h rv"><h2 class="d">Segue a <span class="s">loja</span></h2><span> novidade no face</span></div>
 <div class="dp-x rv">
-<div class="dp-s on"><q>Levei a speed com o câmbio falhando em véspera de prova. Entregaram no mesmo dia, regulada e lavada. Nunca vi isso.</q><p>Marcos T., triatleta</p></div>
-<div class="dp-s"><q>O bike fit acabou com uma dor no joelho que eu tinha há dois anos. O relatório 3D mostra tudo, número por número.</q><p>Camila R., gravel</p></div>
-<div class="dp-s"><q>Furei os dois pneus na Bandeirantes às 22h. A van chegou em 40 minutos e eu voltei pedalando. Virei cliente para sempre.</q><p>Diego A., urbano</p></div>
-<div class="dp-n"><button id="dpp" aria-label="Anterior">←</button><button id="dpn" aria-label="Próximo">→</button></div>
+<p style="font-size:clamp(1.4rem,3vw,2.2rem);line-height:1.4;max-width:44rem">Oferta, peça que chegou e bastidor do balcão: tudo aparece primeiro na página da Ciclo Ype no Facebook.</p>
+<div class="dp-n" style="display:block"><a class="bt bt1" href="https://www.facebook.com/cicloype/" target="_blank" rel="noopener">Abrir Facebook →</a></div>
 </div>
 </section>
 
@@ -297,20 +296,19 @@ html{scroll-behavior:auto}
 <div>
 <h2 class="d">Escolha o serviço. <span class="s">O resto é conosco.</span></h2>
 <p>Preencha ao lado e caia direto no nosso WhatsApp com a mensagem pronta. Respondemos em horário comercial em até 15 minutos.</p>
-<p><b style="color:var(--vt)">Seg a Sex, 8h às 19h. Sáb, 8h às 13h.</b><br>Rua das Palmeiras, 480, São Paulo.</p>
+<p><b style="color:var(--vt)">Rua dos Igarapés, 1001, Itaim Paulista, São Paulo.</b><br>Televendas (11) 2561-5188. Passou na frente, entra no balcão.</p>
 </div>
 <form class="fm" id="fm">
 <label for="fn">Seu nome</label>
 <input id="fn" name="nome" type="text" placeholder="Como podemos chamar você" required autocomplete="name">
 <label for="fs">Serviço</label>
 <select id="fs" name="servico">
-<option>Revisão geral, R$ 249</option>
-<option>Bike fit 3D, R$ 399</option>
-<option>E-bike, R$ 299</option>
-<option>Socorro 24h, R$ 149</option>
-<option>Rodas e raiação, R$ 189</option>
-<option>Montagem zero, R$ 349</option>
-<option>Quero uma bike da vitrine</option>
+<option>Quero uma bicicleta</option>
+<option>Peças para bike</option>
+<option>Peças para moto</option>
+<option>Preciso de revisão</option>
+<option>Acessórios</option>
+<option>Outro assunto</option>
 </select>
 <label for="fd">Melhor dia</label>
 <input id="fd" name="dia" type="date" required>
@@ -321,21 +319,21 @@ html{scroll-behavior:auto}
 <section class="sc">
 <div class="sc-h rv"><h2 class="d">Dúvidas <span class="s">comuns</span></h2><span>06, faq</span></div>
 <div class="rv">
-<div class="fq-i"><button class="fq-q">Quanto tempo dura uma revisão geral?<i>+</i></button><div class="fq-a"><p>De 24 a 48 horas. Revisões com troca de peças seguem o prazo do fornecedor, e você acompanha tudo com fotos no WhatsApp.</p></div></div>
-<div class="fq-i"><button class="fq-q">Vocês parcelam bikes e serviços?<i>+</i></button><div class="fq-a"><p>Sim. Bikes em até 12 vezes e serviços em até 3 vezes sem juros. Pix tem 5 por cento de desconto na oficina.</p></div></div>
-<div class="fq-i"><button class="fq-q">O socorro 24h atende onde?<i>+</i></button><div class="fq-a"><p>Capital e ABC, a qualquer hora. O valor base cobre deslocamento de até 15 km, o restante sai por km rodado.</p></div></div>
-<div class="fq-i"><button class="fq-q">Trabalham com quais marcas?<i>+</i></button><div class="fq-a"><p>Todas. Somos autorizados Shimano Service Center e trabalhamos com SRAM, Campagnolo, Bosch e Shimano Steps em e-bikes.</p></div></div>
+<div class="fq-i"><button class="fq-q">Vocês têm peças para moto também?<i>+</i></button><div class="fq-a"><p>Sim. Bike e moto no mesmo balcão: relação, cabos, pastilhas, filtros, lâmpadas e acessórios, nacionais e importados.</p></div></div>
+<div class="fq-i"><button class="fq-q">A bike sai montada e regulada?<i>+</i></button><div class="fq-a"><p>Sim. Toda bike passa por montagem completa e checklist antes da entrega. Saiu da loja, saiu rodando.</p></div></div>
+<div class="fq-i"><button class="fq-q">Quais as formas de pagamento?<i>+</i></button><div class="fq-a"><p>Chama no zap e pergunta as condições do dia. Televendas (11) 2561-5188.</p></div></div>
+<div class="fq-i"><button class="fq-q">Onde fica a loja?<i>+</i></button><div class="fq-a"><p>Rua dos Igarapés, 1001, Itaim Paulista, São Paulo. Procura pela placa amarela da Ciclo Ype, não tem erro.</p></div></div>
 </div>
 </section>
 
 <footer class="ft">
 <h2 class="ft-g d">Bora <span class="s">pedalar?</span></h2>
 <div class="ft-r">
-<div><h4>Visite</h4><p>Rua das Palmeiras, 480<br>São Paulo, SP<br>Seg a Sex, 8h às 19h<br>Sáb, 8h às 13h</p></div>
-<div><h4>Fale</h4><p><a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Quero%20agendar%20uma%20revis%C3%A3o.">(11) 99999-0000</a><br><a href="mailto:oi@veloz.bike">oi@veloz.bike</a><br><a href="#topo">Voltar ao topo ↑</a></p></div>
-<div><h4>Social</h4><p><a href="#" rel="noopener">Instagram</a><br><a href="#" rel="noopener">Strava Club</a><br><a href="#" rel="noopener">YouTube</a></p></div>
+<div><h4>Loja</h4><p>Rua dos Igarapés, 1001<br>Itaim Paulista, São Paulo<br><a href="https://www.google.com/maps/search/?api=1&query=Rua+dos+Igarap%C3%A9s+1001+Itaim+Paulista+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no mapa ↑</a></p></div>
+<div><h4>Fale</h4><p><a href="https://wa.me/5511973566669" target="_blank" rel="noopener">(11) 97356-6669</a><br>(11) 2561-5188<br><a href="mailto:cicloype@cicloype.com.br">cicloype@cicloype.com.br</a><br><a href="#topo">Voltar ao topo ↑</a></p></div>
+<div><h4>Social</h4><p><a href="https://www.facebook.com/cicloype/" target="_blank" rel="noopener">Facebook</a><br><a href="https://www.cicloype.com.br/" target="_blank" rel="noopener">Loja virtual</a><br>Bike e moto</p></div>
 </div>
-<div class="ft-b"><span>© <i id="yr">2026</i> Veloz Bicicletaria. Todos os giros reservados.</span><span>Fotos: Unsplash (uso livre).</span></div>
+<div class="ft-b"><span>© <i id="yr">2026</i> Ciclo Ype. Todos os giros reservados.</span><span>Fotos: Unsplash (uso livre). Logo: Ciclo Ype.</span></div>
 </footer>
 
 <script>
@@ -390,13 +388,6 @@ if(p<1)requestAnimationFrame(tick);else if(end>=1000)el.textContent=fmt(end);
 });
 },{threshold:.5});
 $$("[data-c]").forEach(function(el){co.observe(el)});
-/* depoimentos */
-var slides=$$(".dp-s"),si=0,st;
-function go(i){slides[si].classList.remove("on");si=(i+slides.length)%slides.length;slides[si].classList.add("on")}
-function auto(){clearInterval(st);st=setInterval(function(){go(si+1)},6000)}
-$("#dpp").addEventListener("click",function(){go(si-1);auto()});
-$("#dpn").addEventListener("click",function(){go(si+1);auto()});
-auto();
 /* faq */
 $$(".fq-i").forEach(function(it){
 var q=$(".fq-q",it),a=$(".fq-a",it);
@@ -410,7 +401,7 @@ if(!open){it.classList.add("o");a.style.maxHeight=a.scrollHeight+"px"}
 $("#fm").addEventListener("submit",function(e){
 e.preventDefault();
 var msg="Olá! Sou "+$("#fn").value+", quero: "+$("#fs").value+", melhor dia: "+$("#fd").value+".";
-window.open("https://wa.me/5511999990000?text="+encodeURIComponent(msg),"_blank");
+window.open("https://wa.me/5511973566669?text="+encodeURIComponent(msg),"_blank");
 });
 $("#yr").textContent=new Date().getFullYear();
 })();
