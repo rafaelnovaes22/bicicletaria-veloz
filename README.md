@@ -6,4 +6,8 @@ Site institucional em arquivo único (`index.html`, 26 KB). Sem build, sem depen
 python -m http.server 8000
 ```
 
+Produção: https://bicicletaria-veloz-production.up.railway.app
+
+Deploy: Railway, projeto `bicicletaria-veloz`, serviço ligado ao repo com Dockerfile nginx na porta 8080.
+
 Imagens: Unsplash, licença livre para uso comercial, via URLs verificadas (HTTP 200). Trocar o WhatsApp `5511999990000` pelo número real em `index.html` (3 ocorrências: botão da loja, formulário e rodapé).
