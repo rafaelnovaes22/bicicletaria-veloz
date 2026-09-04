@@ -10,4 +10,6 @@ Produção: https://bicicletaria-veloz-production.up.railway.app
 
 Deploy: Railway, projeto `bicicletaria-veloz`, serviço ligado ao repo com Dockerfile nginx na porta 8080.
 
-Imagens: Unsplash, licença livre para uso comercial, via URLs verificadas (HTTP 200). Trocar o WhatsApp `5511999990000` pelo número real em `index.html` (3 ocorrências: botão da loja, formulário e rodapé).
+Identidade atual: Ciclo Ype. O formulário e os botões usam o WhatsApp (11) 97356-6669 já cadastrado no site. Fotos externas e links precisam de verificação periódica.
+
+Verificação: `node --test evals/packaging.test.mjs` e `node evals/smoke.mjs`.
